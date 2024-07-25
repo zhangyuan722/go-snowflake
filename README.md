@@ -1,2 +1,3 @@
-# go-snowflake
+# snowflake
+====
 generate snowflake id in golang
