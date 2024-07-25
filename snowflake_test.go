@@ -5,12 +5,12 @@ import (
 )
 
 func TestGenerateSnowflakeId(t *testing.T) {
-	snowflake := NewSnowflakeIdGenerator(1)
+	g := NewSnowflakeIdGenerator(1)
 	uniqueIds := make(map[int64]struct{})
 	total := 1000000
 
 	for i := 0; i < total; i++ {
-		id := snowflake.GenerateId()
+		id := g.GenerateId()
 		uniqueIds[id] = struct{}{}
 	}
 
